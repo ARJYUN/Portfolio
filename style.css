@@ -69,19 +69,3 @@ nav a.active{
     border-bottom: 3px solid var(--red);
 }
 
-@media(max-width:995px){
-    nav{
-        position: absolute;
-        top: 100%;
-        right:0;
-        width: 40%;
-        border-left: 4px solid var(--red);
-        border-bottom: 4px solid var(--red);
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: var(--background);
-        border-top: 0.1rem solid var(--background);
-
-    }
-    
-}
