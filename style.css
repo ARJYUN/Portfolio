@@ -69,3 +69,9 @@ nav a.active{
     border-bottom: 3px solid var(--red);
 }
 
+img{
+    width:300px;
+    height:300px;
+    margin-top: 200px;
+    margin-right: 20px;
+}
