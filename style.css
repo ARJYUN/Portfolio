@@ -1,77 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
-:root{
-    --background:#000000 ;
-    --secbackground: #12102a;
-    --text: #fff;
-    --spltxt:#208ccb;
-    --red:#860d0d;
+body {
+  background-color: whitesmoke;
 }
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    box-sizing:border-box;
-    font-family: 'Poppins',sans-serif;
+#home {
+  height: 40rem;
+  display: flex;
+  align-items: center;
 }
 
-html{
-    overflow-x: hidden;
+#home img {
+  border-radius: 50%;
+  width: 90%;
+}
+#home h1 {
+  font-family: Anton, sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+}
+#home button {
+  width: fit-content;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--background);
-    color: var(--text);
+#about {
+  border-radius: 10px;
 }
 
-header{
-    margin-top: 20px;
-    width: 100%;
-    position: fixed;
-    left:0;
-    top: 0;
-    background-color: transparent;
-    padding: 1rem 8%;
-    filter: drop-shadow(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-.brand{
-    font-size: 2rem;
-    color: var(--red);
-    font-weight: bolder;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.brand:hover{
-    transform: scale(1.1);
-}
-
-nav a{
-    font-size: 1.5rem;
-    color: var(--text);
-    margin-left: 4rem;
-    transition: 0.3s ease;
-    font-weight: bolder;
-    border-bottom: 3px solid transparent;
-}
-nav a:hover,
-nav a.active{
-    color: var(--red);
-    border-bottom: 3px solid var(--red);
-}
-
-img{
-    width:300px;
-    height:300px;
-    margin-top: 200px;
-    margin-right: 20px;
+/* For mobile screen only */
+@media screen and (max-width: 600px) {
+  #home img {
+    border-radius: 50%;
+    width: 70%;
+  }
+  #home h1 {
+    font-family: Anton, sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
 }
